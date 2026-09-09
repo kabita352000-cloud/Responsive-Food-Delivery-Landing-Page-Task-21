@@ -1,373 +1,368 @@
-<!doctype html>
+<!DOCTYPE html>
+
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <title>OmniFood - Healthy Food Delivery</title>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <link rel="stylesheet" href="style.css" />
-  </head>
+<title>OmniFood</title>
 
-  <body>
-    <!-- SECTION 1: HEADER + HERO -->
+<link rel="stylesheet" href="style.css">
 
-    <header class="hero-section">
-      <nav class="navbar">
+</head>
+
+<body>
+
+<!-- I used header for the top section of the website -->
+<header class="hero-section">
+
+    <!-- I used flexbox in CSS to arrange logo and navigation -->
+    <nav class="navbar">
+
         <div class="logo">
-          <img src="assets/icons/logo.png" alt="OmniFood Logo" />
+            <img src="assets/icons/logo.png" alt="OmniFood Logo">
         </div>
 
         <ul class="nav-links">
-          <li>
-            <a href="#hero">FOOD DELIVERY</a>
-          </li>
-
-          <li>
-            <a href="#how-it-works">HOW IT WORKS</a>
-          </li>
-
-          <li>
-            <a href="#cities">OUR CITIES</a>
-          </li>
-
-          <li>
-            <a href="#pricing">SIGN-UP</a>
-          </li>
+            <li><a href="#hero">FOOD DELIVERY</a></li>
+            <li><a href="#how-it-works">HOW IT WORKS</a></li>
+            <li><a href="#cities">OUR CITIES</a></li>
+            <li><a href="#pricing">SIGN-UP</a></li>
         </ul>
 
-        <!-- Mobile Menu Button -->
+        <!-- This button is shown on mobile screen -->
         <button class="menu-button">☰</button>
-      </nav>
 
-      <!-- Hero Content -->
-      <div class="hero-content" id="hero">
+    </nav>
+
+    <!-- Hero section -->
+    <div class="hero-content" id="hero">
+
         <h1>
-          GOODBYE JUNK FOOD
-          <br />
-          <span>HELLO SUPER HEALTHY FOOD</span>
+            GOODBYE JUNK FOOD
+            <br>
+            <span>HELLO SUPER HEALTHY FOOD</span>
         </h1>
 
         <div class="hero-buttons">
-          <a href="#pricing" class="btn btn-primary"> I'm Hungry </a>
-
-          <a href="#how-it-works" class="btn btn-secondary"> Show me more </a>
+            <a href="#pricing" class="btn btn-primary">I'm Hungry</a>
+            <a href="#how-it-works" class="btn btn-secondary">Show me more</a>
         </div>
-      </div>
-    </header>
 
-    <!-- HOW IT WORKS -->
+    </div>
 
-    <section class="how-it-works section" id="how-it-works">
-      <div class="section-title">
+</header>
+
+
+<!-- How it works section -->
+
+<section class="section how-it-works" id="how-it-works">
+
+    <div class="section-title">
         <h2>HOW IT WORKS</h2>
-
         <div class="title-line"></div>
-      </div>
+    </div>
 
-      <div class="how-container">
-        <!-- Phone Image -->
+    <!-- I used flexbox to put phone image and steps side by side -->
+    <div class="how-container">
+
         <div class="phone-container">
-          <img
-            src="assets/phone-image/phone-image.avif"
-            alt="Mobile phone"
-            class="phone-image"
-          />
+            <img src="assets/phone-image/phone-image.avif"
+                alt="Phone showing the app"
+                class="phone-image">
         </div>
 
-        <!-- Steps -->
         <div class="steps-container">
-          <!-- Step 1 -->
-          <div class="step">
-            <div class="step-number">1</div>
 
-            <p>Choose plan that fits best for your need and sign-up today.</p>
-          </div>
+            <div class="step">
+                <div class="step-number">1</div>
+                <p>Choose a plan that fits your needs and sign up today.</p>
+            </div>
 
-          <!-- Step 2 -->
-          <div class="step">
-            <div class="step-number">2</div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <p>Pay for the plan and download the app.</p>
+            </div>
 
-            <p>Pay for the plan and download the app.</p>
-          </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <p>You are done. Start ordering!</p>
+            </div>
 
-          <!-- Step 3 -->
-          <div class="step">
-            <div class="step-number">3</div>
+            <div class="app-buttons">
 
-            <p>You are done, start ordering!!</p>
-          </div>
+                <a href="https://play.google.com/"
+                    target="_blank"
+                    class="app-button">
+                    ▶ Google Play
+                </a>
 
-          <!-- App Buttons -->
-          <div class="app-buttons">
-            <a
-              href="https://play.google.com/"
-              target="_blank"
-              class="app-button"
-            >
-              ▶ Google Play
-            </a>
+                <a href="https://www.apple.com/app-store/"
+                    target="_blank"
+                    class="app-button">
+                     App Store
+                </a>
 
-            <a
-              href="https://www.apple.com/app-store/"
-              target="_blank"
-              class="app-button"
-            >
-               App Store
-            </a>
-          </div>
+            </div>
+
         </div>
-      </div>
-    </section>
 
-    <!--OUR CITIES -->
+    </div>
 
-    <section class="cities section" id="cities">
-      <div class="section-title">
+</section>
+
+
+<!-- Cities section -->
+
+<section class="section cities" id="cities">
+
+    <div class="section-title">
         <h2>WE'RE CURRENTLY IN THESE CITIES</h2>
-
         <div class="title-line"></div>
-      </div>
+    </div>
 
-      <div class="city-grid">
-        <!-- Lisbon -->
+    <!-- I used CSS Grid for showing city cards -->
+    <div class="city-grid">
+
         <div class="city-card">
-          <img src="assets/city/LisbonCity.avif" alt="Lisbon city" />
+            <img src="assets/city/LisbonCity.avif" alt="Lisbon">
 
-          <h3>LISBON</h3>
+            <h3>LISBON</h3>
 
-          <p>👥 1600+ happy eaters</p>
-
-          <p>👨‍🍳 60+ top chefs</p>
-
-          <p>📱 @omnifood_lisbon</p>
+            <p>👥 1600+ happy eaters</p>
+            <p>👨‍🍳 60+ top chefs</p>
+            <p>📱 @omnifood_lisbon</p>
         </div>
 
-        <!-- London -->
         <div class="city-card">
-          <img src="assets/city/LONDON.avif" alt="London city" />
+            <img src="assets/city/LONDON.avif" alt="London">
 
-          <h3>LONDON</h3>
+            <h3>LONDON</h3>
 
-          <p>👥 3700+ happy eaters</p>
-
-          <p>👨‍🍳 160+ top chefs</p>
-
-          <p>📱 @omnifood_london</p>
+            <p>👥 3700+ happy eaters</p>
+            <p>👨‍🍳 160+ top chefs</p>
+            <p>📱 @omnifood_london</p>
         </div>
 
-        <!-- Berlin -->
         <div class="city-card">
-          <img src="assets/city/BerlinCity.avif" alt="Berlin city" />
+            <img src="assets/city/BerlinCity.avif" alt="Berlin">
 
-          <h3>BERLIN</h3>
+            <h3>BERLIN</h3>
 
-          <p>👥 2300+ happy eaters</p>
-
-          <p>👨‍🍳 110+ top chefs</p>
-
-          <p>📱 @omnifood_berlin</p>
+            <p>👥 2300+ happy eaters</p>
+            <p>👨‍🍳 110+ top chefs</p>
+            <p>📱 @omnifood_berlin</p>
         </div>
 
-        <!-- San Francisco -->
         <div class="city-card">
-          <img
-            src="assets/city/SanFranciscoCity.avif"
-            alt="San Francisco city"
-          />
+            <img src="assets/city/SanFranciscoCity.avif" alt="San Francisco">
 
-          <h3>SAN-FRANCISCO</h3>
+            <h3>SAN FRANCISCO</h3>
 
-          <p>👥 1200+ happy eaters</p>
-
-          <p>👨‍🍳 80+ top chefs</p>
-
-          <p>📱 @omnifood_sf</p>
+            <p>👥 1200+ happy eaters</p>
+            <p>👨‍🍳 80+ top chefs</p>
+            <p>📱 @omnifood_sf</p>
         </div>
-      </div>
-    </section>
 
-    <!-- TESTIMONIALS -->
+    </div>
 
-    <section class="testimonials section">
-      <div class="section-title testimonial-title">
-        <h2>OUR CUSTOMER CAN'T LIVE WITHOUT US</h2>
+</section>
 
+
+<!-- Customer testimonials -->
+
+<section class="section testimonials">
+
+    <div class="section-title testimonial-title">
+        <h2>OUR CUSTOMERS CAN'T LIVE WITHOUT US</h2>
         <div class="title-line"></div>
-      </div>
+    </div>
 
-      <div class="testimonial-container">
-        <!-- Testimonial 1 -->
+    <div class="testimonial-container">
+
         <div class="testimonial">
-          <span class="quote"> “ </span>
 
-          <p>
-            Omnifood is just awesome! I just launched a startup which leaves me
-            with no time for cooking, so Omnifood is a life-saver.
-          </p>
+            <span class="quote">“</span>
 
-          <div class="customer">
-            <img src="assets/customer-images/customer1.jpeg" alt="Customer" />
+            <p>
+                Omnifood is just awesome! I just launched a startup which
+                leaves me with no time for cooking, so Omnifood is a life-saver.
+            </p>
 
-            <span> Alberto Duncan </span>
-          </div>
+            <div class="customer">
+                <img src="assets/customer-images/customer1.jpeg"
+                    alt="Alberto Duncan">
+
+                <span>Alberto Duncan</span>
+            </div>
+
         </div>
 
-        <!-- Testimonial 2 -->
+
         <div class="testimonial">
-          <span class="quote"> “ </span>
 
-          <p>
-            Inexpensive, healthy and great tasting meals delivered right to my
-            home. I've never had food delivery like this before.
-          </p>
+            <span class="quote">“</span>
 
-          <div class="customer">
-            <img src="assets/customer-images/customer2.jpeg" alt="Customer" />
+            <p>
+                Inexpensive, healthy and great tasting meals delivered right
+                to my home. I've never had food delivery like this before.
+            </p>
 
-            <span> Joana Silva </span>
-          </div>
+            <div class="customer">
+                <img src="assets/customer-images/customer2.jpeg"
+                    alt="Joana Silva">
+
+                <span>Joana Silva</span>
+            </div>
+
         </div>
 
-        <!-- Testimonial 3 -->
+
         <div class="testimonial">
-          <span class="quote"> “ </span>
 
-          <p>
-            I was looking for a quick and easy food delivery service in San
-            Francisco. I tried Omnifood and I'm loving it!
-          </p>
+            <span class="quote">“</span>
 
-          <div class="customer">
-            <img src="assets/customer-images/customer3.jpeg" alt="Customer" />
+            <p>
+                I was looking for a quick and easy food delivery service in
+                San Francisco. I tried Omnifood and I'm loving it!
+            </p>
 
-            <span> Milton Chapman </span>
-          </div>
+            <div class="customer">
+                <img src="assets/customer-images/customer3.jpeg"
+                    alt="Milton Chapman">
+
+                <span>Milton Chapman</span>
+            </div>
+
         </div>
-      </div>
-    </section>
 
-    <!-- SECTION 5: PRICING -->
+    </div>
 
-    <section class="pricing section" id="pricing">
-      <div class="section-title">
+</section>
+
+
+<!-- Pricing section -->
+
+<section class="section pricing" id="pricing">
+
+    <div class="section-title">
         <h2>START EATING HEALTHY TODAY</h2>
-
         <div class="title-line"></div>
-      </div>
+    </div>
 
-      <div class="pricing-container">
-        <!-- Premium -->
+    <!-- I used grid to arrange the three pricing cards -->
+    <div class="pricing-container">
+
         <div class="pricing-card">
-          <div class="plan-header">
-            <h3>PREMIUM</h3>
 
-            <p class="price">
-              $399
-              <span>/ month</span>
-            </p>
+            <div class="plan-header">
 
-            <p>That's only $13.30 per meal</p>
-          </div>
+                <h3>PREMIUM</h3>
 
-          <div class="plan-features">
-            <p>✓ 1 meal everyday</p>
+                <p class="price">
+                    $399 <span>/ month</span>
+                </p>
 
-            <p>✓ Order 24/7</p>
+                <p>That's only $13.30 per meal</p>
 
-            <p>✓ Access to newest creations</p>
+            </div>
 
-            <p>✓ Free delivery</p>
-          </div>
+            <div class="plan-features">
+                <p>✓ 1 meal everyday</p>
+                <p>✓ Order 24/7</p>
+                <p>✓ Access to newest creations</p>
+                <p>✓ Free delivery</p>
+            </div>
 
-          <a href="#" class="signup-button"> Sign up </a>
+            <a href="#" class="signup-button">Sign up</a>
+
         </div>
 
-        <!-- Pro -->
+
         <div class="pricing-card">
-          <div class="plan-header">
-            <h3>PRO</h3>
 
-            <p class="price">
-              $199
-              <span>/ month</span>
-            </p>
+            <div class="plan-header">
 
-            <p>That's only $16.60 per meal</p>
-          </div>
+                <h3>PRO</h3>
 
-          <div class="plan-features">
-            <p>✓ 1 meal in 10 days</p>
+                <p class="price">
+                    $199 <span>/ month</span>
+                </p>
 
-            <p>✓ Order 24/7</p>
+                <p>That's only $16.60 per meal</p>
 
-            <p>✓ Access to newest creations</p>
+            </div>
 
-            <p>✓ Free delivery</p>
-          </div>
+            <div class="plan-features">
+                <p>✓ 1 meal in 10 days</p>
+                <p>✓ Order 24/7</p>
+                <p>✓ Access to newest creations</p>
+                <p>✓ Free delivery</p>
+            </div>
 
-          <a href="#" class="signup-button"> Sign up </a>
+            <a href="#" class="signup-button">Sign up</a>
+
         </div>
 
-        <!-- Starter -->
+
         <div class="pricing-card">
-          <div class="plan-header">
-            <h3>STARTER</h3>
 
-            <p class="price">
-              19$
-              <span>/ meal</span>
-            </p>
+            <div class="plan-header">
 
-            <p>Healthy meal delivered to you</p>
-          </div>
+                <h3>STARTER</h3>
 
-          <div class="plan-features">
-            <p>✓ 1 meal per month</p>
+                <p class="price">
+                    $19 <span>/ meal</span>
+                </p>
 
-            <p>✓ Order 24/7</p>
+                <p>Healthy meal delivered to you</p>
 
-            <p>✕ Access to newest creations</p>
+            </div>
 
-            <p>✕ Free delivery</p>
-          </div>
+            <div class="plan-features">
+                <p>✓ 1 meal per month</p>
+                <p>✓ Order 24/7</p>
+                <p>✕ Access to newest creations</p>
+                <p>✕ Free delivery</p>
+            </div>
 
-          <a href="#" class="signup-button"> Sign up </a>
+            <a href="#" class="signup-button">Sign up</a>
+
         </div>
-      </div>
-    </section>
 
-    <!-- Footer -->
+    </div>
 
-    <footer class="footer">
-      <div class="footer-container">
-        <!-- Footer Links -->
+</section>
+
+
+<!-- Footer -->
+
+<footer class="footer">
+
+    <div class="footer-container">
+
         <div class="footer-links">
-          <a href="#"> About us </a>
-
-          <a href="#"> Blog </a>
-
-          <a href="#"> Press </a>
-
-          <a href="#"> iOS App </a>
-
-          <a href="#"> Android App </a>
+            <a href="#">About us</a>
+            <a href="#">Blog</a>
+            <a href="#">Press</a>
+            <a href="#">iOS App</a>
+            <a href="#">Android App</a>
         </div>
 
-        <!-- Social Icons -->
         <div class="social-icons">
-          <a href="#"> Facebook </a>
-
-          <a href="#"> Instagram </a>
-
-          <a href="#"> Twitter </a>
+            <a href="#">Facebook</a>
+            <a href="#">Instagram</a>
+            <a href="#">Twitter</a>
         </div>
-      </div>
 
-      <!-- Copyright -->
-      <div class="copyright">
+    </div>
+
+    <div class="copyright">
         <p>Copyright © 2026 OmniFood. All rights reserved.</p>
-      </div>
-    </footer>
-  </body>
+    </div>
+
+</footer>
+
+</body>
 </html>

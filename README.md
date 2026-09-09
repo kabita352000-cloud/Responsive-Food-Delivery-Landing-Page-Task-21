@@ -1,57 +1,56 @@
-# 🍽️ Responsive Food Delivery Landing Page
+# OmniFood Landing Page
 
-## 📌 Project Overview
+## Description
 
-This project is a **responsive single-page food delivery landing website** inspired by the OmniFood design.
+This is a simple OmniFood landing page made using HTML and CSS.
 
-The main purpose of this project is to practice:
+The website is for a healthy food delivery service. I created different sections to make the page look like a complete food delivery website.
 
-- HTML structure
-- CSS styling
-- CSS Flexbox
-- CSS Grid
-- Positioning
-- Responsive design
-- Media queries
-- Image handling
-- Buttons and navigation
-- Creating multiple sections in a single webpage
+## What I Did
 
-The website is designed to work properly on **desktop, tablet, and mobile devices**.
+In this project, I created:
 
+* Header and navigation bar
+* Hero section with buttons
+* How It Works section
+* Cities section
+* Customer testimonials
+* Pricing section
+* Footer
 
-## 🎯 Project Objective
+I also added images and background images to make the website look better.
 
-The objective of this project is to build a clean and responsive food delivery landing page similar to the provided design screenshots.
+For the layout, I used **Flexbox and CSS Grid**. I also used **media queries** to make the website responsive on tablet and mobile screens.
 
-The webpage contains:
+## Technologies Used
 
-1. Header + Hero Section
-2. How It Works Section
-3. Our Cities Section
-4. Testimonials Section
-5. Pricing Plans Section
-6. Footer
+* HTML
+* CSS
+* Flexbox
+* CSS Grid
+* Media Queries
 
+## What I Learned
 
-# ✨ Sections Included
+While making this project, I practiced:
 
-## 1. Header + Hero Section
+* Creating a webpage using HTML
+* Styling elements using CSS
+* Using Flexbox for layouts
+* Using Grid for cards
+* Adding background images
+* Making the page responsive
+* Using media queries for different screen sizes
 
-The top section contains:
+## How to Run
 
-- Circular food delivery logo
-- Navigation menu
-- FOOD DELIVERY
-- HOW IT WORKS
-- OUR CITIES
-- SIGN-UP
-- Main hero heading
-- Two CTA buttons
-- Background image
-- Dark overlay for better text readability
+1. Download or clone the project.
+2. Open the project folder.
+3. Make sure `index.html`  `style.css` and assets folder are in the project.
+4. Open `index.html` in your browser.
 
-### Hero Heading
+The website will open in the browser.
 
-GOODBYE JUNK FOOD
-HELLO SUPER HEALTHY FOOD
+## Author
+
+**Kabita Kumari**
